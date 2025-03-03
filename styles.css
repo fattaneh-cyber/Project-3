@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white; /* Add color for better text visibility */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* Base Styles (Existing Styles from Project 2) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* 🛠️ Media Query 1: Small Screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+    body {
+        background-color: #f0f0f0; /* Light gray background */
+    }
+
+    header {
+        font-size: 1.5em; /* Smaller header text */
+        padding: 10px; /* Reduce padding */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack nav items */
+        padding: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        color: blue; /* Change link color */
+        border-bottom: 1px solid gray; /* Add border */
+    }
+
+    img {
+        width: 100%;
+        height: auto; /* Make images responsive */
+    }
+}
+
+/* 🖥️ Media Query 2: Large Screens (e.g., desktops) */
+@media (min-width: 1000px) {
+    body {
+        background-color: lightblue; /* Light blue background */
+    }
+
+    header {
+        font-size: 2.5em; /* Larger header text */
+        padding: 20px; /* Increase padding */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around; /* Evenly space nav items */
+    }
+
+    nav a {
+        margin-right: 15px;
+        color: darkgreen; /* Change link color */
+    }
+
+    .container {
+        max-width: 1200px; /* Restrict container width */
+        margin: 0 auto;
+    }
+}
